@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Torneio da Morte — Billions 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<div id="petals"></div>
+<header><small>⛩ BILLIONS · 2026 · PRIMAVERA ⛩</small><h1>TORNEIO DA MORTE</h1>
+<div id="sync" style="font-size:.8rem;opacity:.85;margin:.4rem 0"></div>
+<div class="tools"><button class="b" id="exp">SALVAR / EXPORTAR TORNEIO</button>
+<label class="b">CARREGAR TORNEIO<input type="file" id="imp" accept=".json" hidden></label></div></header>
+<nav id="nav"><button data-v="0">👤<span>Participantes</span></button><button data-v="1">⚔<span>Fase 1</span></button><button data-v="2">⛩<span>Fase 2</span></button><button data-v="3">🏆<span>Resumo</span></button></nav>
+<main>
+<section id="v0"><h2>PARTICIPANTES <span id="cnt" class="cnt"></span></h2>
+<form id="f" class="card form">
+<input id="fp" placeholder="Nome do jogador" required maxlength="40">
+<input id="fc" placeholder="Nome do personagem" required maxlength="40">
+<input id="fl" placeholder="Classe" required maxlength="30">
+<label class="up"><img id="pv" alt=""><span>📷 Escolher / substituir foto</span><input type="file" id="fi" accept="image/*" hidden></label>
+<button class="b" id="fs">ADICIONAR PARTICIPANTE</button>
+<button type="button" class="b red" id="fx" hidden data-a="cancel">CANCELAR EDIÇÃO</button>
+</form>
+<div id="cards" class="grid"></div></section>
+<section id="v1" hidden></section><section id="v2" hidden></section><section id="v3" hidden></section>
+</main>
+<script src="app.js"></script></body></html>
